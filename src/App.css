@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+.App {
+  text-align: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.topTracks {
+  /* font-family: 'Bungee Shade', cursive; */
+
+}
+
+body {
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  flex-grow: 1;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px rgb(5, 5, 5);
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  text-align: left;
+}
+form {
+  padding-top: 5px;
+}
+img {
+  width: 60px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: px #888888;
+  border-color: rgb(97, 96, 96);
+}
+.container {
+  padding: 0 50px;
+  width: 80vw;
+min-height: 70vh;
+  margin: auto;
+  /* display: flex; */
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  padding: 50px 50px 0 50px;
+  height: auto;
+}
+select, input {
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 20px;
+  border: none;
+}
+button {
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: #c09d03;
+}
+label span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.delButton {
+  cursor: pointer;
+}
+.lineItem {
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  align-items: center;
+
+  /* justify-content: space-between; */
+  /* padding-right: 10vw; */
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.songTitle {
+  justify-self: stretch;
+  grid-column: 2/4;
+}
+
+.playCount1 {
+  /* justify-self: start; */
+grid-column: 5/7;
+  border-radius: 3px;
+  background: rgba(231, 231, 231, 0.5)
+}
+
+
+.footer {
+  flex-shrink: 0;
+  padding: 6px;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+}
