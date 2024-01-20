@@ -33,7 +33,6 @@ function App() {
       if (searchedTrack.track.album) {
         // Gets the 2nd image. change first number to 0 to get first image.
         console.log(Object.entries(searchedTrack.track.album.image[1])[0][1]);
-
         image = Object.entries(searchedTrack.track.album.image[1])[0][1];
       }
       const tracktoSave = {
