@@ -148,9 +148,9 @@ function App() {
   }
   async function handleDelete(trackId) {
     console.log("in handle delete");
-    // if(!state.user) return;
     const URL = `https://wave-app-backend.herokuapp.com/api/tracks/${trackId}`;
-    const tracks = await fetch(URL, {
+    await fetch(URL, {
+      // ✅ Just await without storing
       method: "DELETE",
     }).then((res) => res.json());
     getAppData();
@@ -245,11 +245,11 @@ function App() {
           {state.tracks.map((x, index) => (
             <article key={index}>
               <div className="lineItem">
-                <img src={x.image}></img>
+                <img src={x.image} alt={`${x.title} by ${x.artist}`} />
                 <div className="songTitle">
                   {x.title} BY {x.artist}{" "}
                 </div>
-                <a href={x.url} target="_blank">
+                <a href={x.url} target="_blank" rel="noreferrer">
                   Play Track {"▶️"}
                 </a>{" "}
                 <div className="playCount1">
